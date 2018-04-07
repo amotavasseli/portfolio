@@ -35,7 +35,14 @@ class LMSDocResponse extends React.Component {
         }
         inputs.each((i, span) => {
             if (inputs[i].dataset.lmsInput == "hanzicraft") {
-                ReactDOM.render(<HanziResponse worddata={savedContent != null ? savedContent[i] : null} ref={elem => this.inputs[i] = elem} />, span);
+                ReactDOM.render(
+                    <HanziResponse 
+                        worddata={savedContent != null ? 
+                            savedContent[i] : null} 
+                            ref={elem => this.inputs[i] = elem} 
+                    />,
+                    span
+                );
             } else {
                 const spanData = {
                     word: $(span).attr("data-word"),
