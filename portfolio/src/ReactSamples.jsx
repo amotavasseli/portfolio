@@ -30,11 +30,11 @@ class ReactSamples extends React.Component {
 
     render(){
         return (
-            <div>
-                <h3 onClick={() => this.handleTier1()}>React Component - 1st Tier</h3>
-                <h3 onClick={() => this.handleTier2()}>React Component - 2nd Tier</h3>
-                <h3 onClick={() => this.handleTier3()}>React Component - 3rd Tier</h3>
-            </div>
+            <React.Fragment>
+                <a onClick={() => this.handleTier1()}>React Component - 1st Tier</a>
+                <a onClick={() => this.handleTier2()}>React Component - 2nd Tier</a>
+                <a onClick={() => this.handleTier3()}>React Component - 3rd Tier</a>
+            </React.Fragment>
         )
     }
 }

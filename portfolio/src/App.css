@@ -43,4 +43,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  height: 100px;
+  /* margin-top: 1.5em; */
+}
+
+#sampleOptions {
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around; 
+  height: 200px;
+  padding-left: 1em;
+
 }

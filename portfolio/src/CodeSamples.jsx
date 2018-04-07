@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactSamples from './ReactSamples';
+import CSharpSamples from './CSharpSamples';
 
 
 
@@ -12,6 +13,14 @@ class CodeSamples extends React.Component{
             document.getElementById("sampleOptions")
         )
     }
+
+    handleCS = () => {
+        ReactDOM.render(
+            <CSharpSamples />,
+            document.getElementById("sampleOptions")
+        )
+    }
+
     render(){
         return (
             <div className="samples">
@@ -27,11 +36,7 @@ class CodeSamples extends React.Component{
                 <div id="selectedSample" style={{"flexGrow": 9}}>
                 </div>
             </div>
-
-
         )
-
-
     }
 }
 

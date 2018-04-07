@@ -12,9 +12,7 @@ class Portfolio extends React.Component{
                 <div id="activeComponent">
                 </div>
             </div>
-
         )
-        
     }
 }
 
