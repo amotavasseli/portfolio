@@ -3,6 +3,10 @@ import ReactDOM from 'react-dom';
 import ReactSamples from './ReactSamples';
 import CSharpSamples from './CSharpSamples';
 import SQLSamples from './SQLSamples';
+import reactLogo from './logos/react.svg';
+import angularLogo from './logos/angular.svg';
+import cLogo from './logos/csharp.png';
+import tsqlLogo from './logos/tsql.jpg';
 
 class CodeSamples extends React.Component{
 
@@ -41,15 +45,15 @@ class CodeSamples extends React.Component{
         return (
             <div className="samples">
                 <div className="codeSideBar" style={{"flexGrow": 1}}>
-                    <a onClick={() => this.handleReact()}>React</a>
-                    <a onClick={() => this.handleAngular()}>AngularJS</a>
-                    <a onClick={() => this.handleCS()}>C#</a>
-                    <a onClick={() => this.handleSQL()}>T-SQL</a>
+                    <img src={reactLogo} onClick={() => this.handleReact()} className="sampLogo" alt="React"/>
+                    <img src={angularLogo} onClick={() => this.handleAngular()} className="sampLogo" alt="AngularJS"/>
+                    <img src={cLogo} onClick={() => this.handleCS()} className="sampLogo" alt="C#"/>
+                    <img src={tsqlLogo} onClick={() => this.handleSQL()} className="sampLogo" alt="T-SQL"/>
                 </div>
                 <div id="sampleOptions" style={{"flexGrow": 2}}>
 
                 </div>
-                <div id="selectedSample" style={{"flexGrow": 9}}>
+                <div id="selectedSample" style={{"flexGrow": 9, "overflow": "auto", "height": "100em"}}>
                 </div>
             </div>
         )

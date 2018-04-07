@@ -35,7 +35,7 @@
   display: flex; 
   flex-direction: column;
   justify-content: space-around; 
-  height: 200px;
+  padding-top: 2em;
   padding-left: 2em;
 }
 
@@ -56,4 +56,26 @@
   height: 200px;
   padding-left: 1em;
 
+}
+
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2em;
+
+}
+
+.logo {
+  height: 5em;
+  width: 5em;
+  padding: 2em;
+}
+
+.sampLogo {
+  height: 5em;
+  width: 5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
