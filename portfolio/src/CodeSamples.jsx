@@ -2,8 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import ReactSamples from './ReactSamples';
 import CSharpSamples from './CSharpSamples';
-
-
+import SQLSamples from './SQLSamples';
 
 class CodeSamples extends React.Component{
 
@@ -17,6 +16,13 @@ class CodeSamples extends React.Component{
     handleCS = () => {
         ReactDOM.render(
             <CSharpSamples />,
+            document.getElementById("sampleOptions")
+        )
+    }
+
+    handleSQL = () => {
+        ReactDOM.render(
+            <SQLSamples />,
             document.getElementById("sampleOptions")
         )
     }

@@ -7,7 +7,7 @@ class WebAPI extends React.Component {
     render() {
 
         return (
-            <Highlight>
+            <Highlight className="cs">
                 {
                     `
                     using StrokeWars.Models.Domain;

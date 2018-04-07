@@ -7,7 +7,7 @@ class Hub extends React.Component {
     render() {
 
         return (
-            <Highlight>
+            <Highlight className="cs">
                 {
                     `
                     using Microsoft.AspNet.SignalR;

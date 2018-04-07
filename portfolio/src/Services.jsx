@@ -7,7 +7,7 @@ class Services extends React.Component {
     render() {
 
         return (
-            <Highlight>
+            <Highlight className="cs">
                 {
                     `
                     using Newtonsoft.Json;
