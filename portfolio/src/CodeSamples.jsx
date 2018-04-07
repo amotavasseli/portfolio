@@ -7,6 +7,7 @@ import SQLSamples from './SQLSamples';
 class CodeSamples extends React.Component{
 
     handleReact = () => {
+        this.clearCode();
         ReactDOM.render(
             <ReactSamples />,
             document.getElementById("sampleOptions")
@@ -14,6 +15,7 @@ class CodeSamples extends React.Component{
     }
 
     handleCS = () => {
+        this.clearCode();
         ReactDOM.render(
             <CSharpSamples />,
             document.getElementById("sampleOptions")
@@ -21,9 +23,17 @@ class CodeSamples extends React.Component{
     }
 
     handleSQL = () => {
+        this.clearCode();
         ReactDOM.render(
             <SQLSamples />,
             document.getElementById("sampleOptions")
+        )
+    }
+
+    clearCode = () => {
+        ReactDOM.render(
+            null, 
+            document.getElementById("selectedSample")
         )
     }
 
