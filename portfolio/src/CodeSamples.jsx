@@ -53,7 +53,7 @@ class CodeSamples extends React.Component{
                 <div id="sampleOptions" style={{"flexGrow": 2}}>
 
                 </div>
-                <div id="selectedSample" style={{"flexGrow": 9, "overflow": "auto", "height": "100em"}}>
+                <div id="selectedSample" style={{"flexGrow": 9, "overflow": "auto", "height": "50em"}}>
                 </div>
             </div>
         )

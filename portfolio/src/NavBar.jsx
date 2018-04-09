@@ -31,7 +31,7 @@ class NavBar extends React.Component {
         return (
             <div>
                 <header className="navbar">
-                    <h1 className="title">Welcome to my Portfolio Page</h1>
+                    <h1 className="title">Arian's Portfolio</h1>
                     <span className="nav-options">
                         <a onClick={() => this.handleHome()}>Home</a>
                         <a onClick={() => this.handleSamples()}>Code Samples</a>
