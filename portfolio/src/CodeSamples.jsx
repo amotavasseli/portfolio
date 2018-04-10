@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import ReactSamples from './ReactSamples';
 import CSharpSamples from './CSharpSamples';
 import SQLSamples from './SQLSamples';
+import AngularSamples from './AngularSamples';
 import reactLogo from './logos/react.svg';
 import angularLogo from './logos/angular.svg';
 import cLogo from './logos/csharp.png';
@@ -30,6 +31,14 @@ class CodeSamples extends React.Component{
         this.clearCode();
         ReactDOM.render(
             <SQLSamples />,
+            document.getElementById("sampleOptions")
+        )
+    }
+
+    handleAngular = () => {
+        this.clearCode();
+        ReactDOM.render(
+            <AngularSamples />,
             document.getElementById("sampleOptions")
         )
     }

@@ -6,7 +6,7 @@ class ReactTier3 extends React.Component {
 
     render() {
         return (
-            <Highlight>
+            <Highlight className="js">
                 {
                     `
                     import React from 'react';
