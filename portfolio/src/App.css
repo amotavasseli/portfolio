@@ -78,7 +78,7 @@
   height: 5em;
   width: 5em;
   padding: 2em;
-  animation: logo-spin 8s 1, slide 8s 1, opacity 1ms forwards;
+  animation: logo-spin 8s 1, slide 6s 1, opacity 1ms forwards;
   opacity: 0;
   
 }
