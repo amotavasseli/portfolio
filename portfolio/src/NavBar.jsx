@@ -2,6 +2,7 @@ import React from 'react';
 import CodeSamples from './CodeSamples';
 import ReactDOM from 'react-dom';
 import Home from './Home';
+import Resume from './Resume';
 
 
 
@@ -23,8 +24,8 @@ class NavBar extends React.Component {
         
     }
 
-    handleAbout = () => {
-        
+    handleResume = () => {
+        ReactDOM.render(<Resume />, document.getElementById("activeComponent"));
     }
 
     render() {
@@ -35,7 +36,7 @@ class NavBar extends React.Component {
                     <span className="nav-options">
                         <a onClick={() => this.handleHome()}>Home</a>
                         <a onClick={() => this.handleSamples()}>Code Samples</a>
-                        <a onClick={() => this.handleAbout()}>About</a>
+                        <a onClick={() => this.handleResume()}>Resume</a>
                     </span>
                 </header>
             </div>

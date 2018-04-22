@@ -90,3 +90,15 @@
   padding-bottom: 1em;
   cursor: pointer;
 }
+.resume-block {
+  background-color: lightgray;
+}
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2em;
+  overflow: auto;
+}
