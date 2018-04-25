@@ -4,12 +4,8 @@ import ReactDOM from 'react-dom';
 import Home from './Home';
 import Resume from './Resume';
 
-
-
 class NavBar extends React.Component {
 
-    // state = {
-    // }
     componentDidMount(){
         this.handleHome();
     }
@@ -36,7 +32,7 @@ class NavBar extends React.Component {
                     <span className="nav-options">
                         <a onClick={() => this.handleHome()}>Home</a>
                         <a onClick={() => this.handleSamples()}>Code Samples</a>
-                        <a onClick={() => this.handleResume()}>Resume</a>
+                        <a onClick={() => this.handleResume()}>Résumé</a>
                     </span>
                 </header>
             </div>
