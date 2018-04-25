@@ -17,10 +17,8 @@ class Resume extends React.Component {
                         file={pdf}
                     >
                         <Page pageNumber={this.state.pageNumber} />
-
                     </Document>
                 </div>
-
             </div>
         )
     }

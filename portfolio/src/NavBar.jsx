@@ -12,12 +12,10 @@ class NavBar extends React.Component {
 
     handleHome = () => {
         ReactDOM.render(<Home />, document.getElementById("activeComponent"));
-
     }
 
     handleSamples = () => {
-        ReactDOM.render(<CodeSamples />, document.getElementById("activeComponent"));
-        
+        ReactDOM.render(<CodeSamples />, document.getElementById("activeComponent"));    
     }
 
     handleResume = () => {
